@@ -1,0 +1,75 @@
+body {
+    font-size: 50px;
+    background: #202020;
+}
+span {
+    font-size: 35px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ddd;
+}
+
+
+/* button  codes*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+.btnhouse {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding: 40px 20px;
+  line-height: 1.2em;
+}
+/* starts here */
+.btn {
+  color: #444;
+  line-height: 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 0 0 #444 inset, 0.3em 0.2em 0 0 #bbb;
+  border: 0.2em solid #444;
+  padding: 0.8em;
+  text-align: center;
+  transition: 0.25s box-shadow, 0.25s -webkit-transform;
+}
+.btn-small {
+  padding: 0.7em;
+}
+.btn:hover {
+  box-shadow: 0 4em 0 0 #444 inset, 0em 0em 0 0 #bbb;
+  -webkit-transform: translate(0.3em, 0.2em);
+  color: #fff;
+}
+.btn.disabled {
+  opacity: 0.8;
+}
+.btn.disabled:hover {
+  box-shadow: 0 0 0 0 #444 inset, 0.3em 0.2em 0 0 #bbb;
+  -webkit-transform: translate(0, 0);
+  color: #444;
+}
+/* ends here */
+.heavy {
+  font-weight: 700;
+}
+.extraheavy {
+  font-weight: 900;
+}
+.light {
+  font-weight: 300;
+}
