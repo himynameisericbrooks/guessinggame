@@ -3,7 +3,7 @@ var secretNum = Math.floor((Math.random() * 100) + 1);
 
 
 // Attempts counter
-var tryCount = 0;
+var tryCount = 1;
 
 // ask the user to guess the random number
 var guess = 0;
@@ -22,26 +22,26 @@ function playGame()
     guess = parseInt(input.value);
 
 // if they guess wrong, tell them if they were too high or too low and have them guess again
-    if (guess == 69) {
-    output.innerHTML = 'I know you too well, Joe. Guess again.';
+        if (guess < secretNum) {
+    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too low. <br>Try again, but pick a higher number. <br><span>I believe in you! :)</span';
     tryCount +=1;
     }
-    else if (guess < secretNum) {
-output.innerHTML = 'Sorry. You guessed too low. Try again, but pick a higher number. I believe in you! :)';
-tryCount +=1;
-}
 
     else if (guess > secretNum) {
-output.innerHTML = 'Sorry. You guessed too high. Try again, but pick a lower number. I think you might get it this time. Or maybe not :)';
-tryCount += 1;
-}
+    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too high. <br>Try again, but pick a lower number. <br><span>I think you might get it this time. Or maybe not :)</span>';
+    tryCount += 1;
+    }
 
 // when the user guesses correctly, tell them that they guessed correctly and tell them the number of tries it took them
 
-    else {
-        tryCount +=1;
-output.innerHTML = "That's it! " + secretNum + " was the secret number! You guessed correctly! It only took you " + tryCount + " tries to figure it out.";
+    else if (guess == secretNum) {
+    output.innerHTML = "That's it! " + secretNum + " was the secret number! <br>You guessed correctly! <span>It only took you " + tryCount + " tries to figure it out.</span>";
     }
+
+    // If a non-number is submitted
+    else {
+        output.innerHTML = 'That is not a valid number. <br> <span>Try again!</span>';
+        }
 }
 
 

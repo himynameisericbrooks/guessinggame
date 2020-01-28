@@ -10,11 +10,21 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    text-align: center;
 }
 p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    color: #ddd;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #ddd;
 }
 
