@@ -23,12 +23,12 @@ function playGame()
 
 // if they guess wrong, tell them if they were too high or too low and have them guess again
         if (guess < secretNum) {
-    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too low. <br>Try again, but pick a higher number. <br><span>I believe in you! :)</span';
+    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too low. <br>Try again. <br><span>I believe in you! :)</span';
     tryCount +=1;
     }
 
     else if (guess > secretNum) {
-    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too high. <br>Try again, but pick a lower number. <br><span>I think you might get it this time. Or maybe not :)</span>';
+    output.innerHTML = '<span>That was attempt number ' + tryCount + '.' + '<br></span> You guessed too high. <br>Try again. <br><span>I think you might get it this time. Or maybe not :)</span>';
     tryCount += 1;
     }
 

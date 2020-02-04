@@ -2,15 +2,12 @@ body {
     font-size: 50px;
     background: #202020;
 }
-span {
-    font-size: 35px;
-}
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px;
     text-align: center;
 }
 p {
@@ -26,6 +23,7 @@ span {
     align-items: center;
     justify-content: center;
     color: #ddd;
+    font-size: 35px;
 }
 
 
@@ -82,4 +80,72 @@ span {
 }
 .light {
   font-weight: 300;
+}
+
+
+
+
+@media (max-width: 1138px) {
+  p {
+    font-size: 48px;
+  }
+  span {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1095px) {
+  p {
+    font-size: 46px;
+  }
+  span {
+    font-size: 31px;
+  }
+}
+@media (max-width: 1050px) {
+  p {
+    font-size: 44px;
+  }
+  span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1008px) {
+  p {
+    font-size: 42px;
+  }
+  span {
+    font-size: 28px;
+  }
+}
+@media (max-width: 735px) {
+  p {
+    font-size: 40px;
+  }
+  span {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 35px;
+  }
+  span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  p {
+    font-size: 33px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 340px) {
+  p {
+    font-size: 31px;
+  }
+  span {
+    font-size: 16px;
+  }
 }
