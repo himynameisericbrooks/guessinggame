@@ -1,15 +1,21 @@
 body {
     font-size: 50px;
     background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     text-align: center;
+    margin: auto;
 }
+
 p {
     display: flex;
     flex-direction: column;
@@ -17,6 +23,7 @@ p {
     justify-content: center;
     color: #ddd;
 }
+
 span {
     display: flex;
     flex-direction: column;
